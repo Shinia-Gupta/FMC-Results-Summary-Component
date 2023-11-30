@@ -52,6 +52,11 @@ Users should be able to:
 
 ### Screenshot
 
+### Desktop View
+![Screenshot 2023-11-30 152647](https://github.com/Shinia-Gupta/FMC-Results-Summary-Component/assets/113818197/19940993-5781-4948-962c-1a5eae718f80)
+
+### Active State
+![Screenshot 2023-11-30 152534](https://github.com/Shinia-Gupta/FMC-Results-Summary-Component/assets/113818197/f3abb990-dcb5-4b1a-8120-8f0f901084fa)
 
 ### Links
 
