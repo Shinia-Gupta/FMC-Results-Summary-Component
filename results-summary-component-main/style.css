@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+flex-direction: column;
+gap: 10px;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    width: 48vw;
+    height: 60vh;
+    /* background-color: blue; */
+    border-radius: 40px;
+    box-shadow: 22px 15px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.inner-div-1,
+.inner-div-2 {
+    width: 100%;
+    background-color: aquamarine;
+    height: 100%;
+    padding: 15px;
+}
+
+
+/* inner div 1 */
+.inner-div-1 {
+    border-radius: 40px;
+    background: linear-gradient(180deg, #6540FC, #553AF6, #3E32EE);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-div-1 h3 {
+    color: #CAC9FE;
+    margin: 30px 10px;
+    text-align: center;
+}
+
+.inner-div-1 .result-circle {
+    height: 190px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #4728D7, #4532EA);
+    border: none;
+    outline: none;
+    /* box-shadow: ; */
+}
+
+.result-circle #score {
+    font-size: 65px;
+    color: #FFFFFD;
+    font-weight: bold;
+}
+
+.result-circle p {
+    color: #867BF8;
+    font-size: 16px;
+}
+
+.inner-div-1 h2 {
+    color: #FFFEFF;
+    margin: 10px 0;
+}
+
+.inner-div-1 p {
+    color: #C3C5FE;
+    font-size: 16px;
+    text-align: center;
+    word-spacing: 5px;
+    overflow-x: hidden;
+}
+
+/* inner div 2 */
+.inner-div-2 {
+    background-color: #FFFFFF;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 20px; */
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.inner-div-2 .top {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.inner-div-2 .top h3 {
+    color: #4A4F65;
+    margin: 30px 0px;
+    font-weight: bolder;
+    /* text-align: left; */
+}
+
+.inner-div-2 .top .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: f;
+    /* justify-content: center; */
+    /* width: 500px; */
+    /* height: fit-content; */
+}
+
+.inner-div-2 .top .summaries {
+    width: 280px;
+    height: 50px;
+    /* background-color: red; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    /* justify-content:space-evenly; */
+    align-items: center;
+}
+
+#icon-reaction,
+#icon-memory,
+#icon-verbal,
+#icon-visual {
+    margin: 10px;
+}
+
+.div-text {
+    font-weight: bold;
+    margin-right: 90px;
+}
+
+.inner-div-2 .top .color-red {
+    background-color: #FFF6F5;
+}
+
+.inner-div-2 .top .color-yellow {
+    background-color: #FFFAF2;
+}
+
+.inner-div-2 .top .color-green {
+    background-color: #F2FBFA;
+}
+
+.inner-div-2 .top .color-purple {
+    background-color: #F3F3FD;
+}
+
+.spans-div{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+.div-marks {
+    color: #5F677B;
+    font-weight: bold;
+    /* margin-right: 10px; */
+/*text-align: right; */
+}
+
+.outof100 {
+    color: #A7A4B4;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 0;
+}
+
+.inner-div-2 button {
+    width: 280px;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #303B59;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.inner-div-2 button:active{
+    background-color: #4635F1;
+}
+/* Existing styles... */
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .inner-div-1,
+  .inner-div-2 {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+
+  .inner-div-2 {
+    border-radius: 0;
+  }
+
+/* Existing styles... */
+
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+      }
+    
+      .inner-div-1,
+      .inner-div-2 {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 10px;
+      }
+    
+      .inner-div-2 {
+        border-radius: 0;
+      }
+    
+      /* Adjust font sizes for smaller screens */
+      .inner-div-1 h3,
+      .inner-div-1 h2,
+      .inner-div-1 p,
+      .inner-div-2 h3,
+      .inner-div-2 p {
+        font-size: 5vw; /* Adjust as needed */
+      }
+  }
+}
